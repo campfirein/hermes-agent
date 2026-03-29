@@ -138,6 +138,7 @@ PLATFORMS = {
     "matrix":   {"label": "💬 Matrix",     "default_toolset": "hermes-matrix"},
     "dingtalk": {"label": "💬 DingTalk",   "default_toolset": "hermes-dingtalk"},
     "api_server": {"label": "🌐 API Server", "default_toolset": "hermes-api-server"},
+    "mattermost": {"label": "💬 Mattermost", "default_toolset": "hermes-mattermost"},
 }
 
 
@@ -187,6 +188,14 @@ TOOL_CATEGORIES = {
                 "web_backend": "firecrawl",
                 "env_vars": [
                     {"key": "FIRECRAWL_API_KEY", "prompt": "Firecrawl API key", "url": "https://firecrawl.dev"},
+                ],
+            },
+            {
+                "name": "Exa",
+                "tag": "AI-native search and contents",
+                "web_backend": "exa",
+                "env_vars": [
+                    {"key": "EXA_API_KEY", "prompt": "Exa API key", "url": "https://exa.ai"},
                 ],
             },
             {
